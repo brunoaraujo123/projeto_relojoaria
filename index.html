@@ -1,0 +1,124 @@
+<?php
+
+if(isset($_POST['submit']))
+{
+    print_r($_POST['cliente']);
+    print_r($_POST['telefone']);
+    print_r($_POST['relogio']);
+    print_r($_POST['serviço']);
+    print_r($_POST['valor']);
+    print_r($_POST['data']);
+    
+}
+
+
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina do Bruno</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script1.js"></script>
+
+    <style>
+        p {
+            color: azure;
+        }
+    </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <h1>Bruno Araujo Relojoeiro</h1>
+    </header>
+
+    <main>
+
+        <div class="title">
+            <h2> WELCOME</h2>
+            <span></span>
+
+        </div>
+        
+        
+         <div class="card">
+            
+            <div class="lineinput">
+
+       
+               <p> <label>cliente</label> </p>
+                <input type="text" id="cliente" placeholder="nome do cliente">
+            </div>
+
+            <div class="lineinput">
+                <p> <label>telefone</label> </p>
+                 <input type="tel" id="telefone" placeholder="telefone do cliente">
+             </div>
+
+            <div class="lineinput">
+                <p><label>relogio</label></p>
+                <input type="text number" id="relogio" placeholder="nome do relogio">
+            </div>
+
+            <div class="lineinput">
+                <p><label>serviço</label></p>
+                <input type="text" id="produto" placeholder="nome do serviço">
+            </div>
+
+            <div class="lineinput">
+               <p> <label>valor</label></p>
+                <input type="number" id="preço" placeholder="valor do serviço">
+            </div>
+
+            <div class="lineinput">
+                <p> <label>data\hora</label></p>
+                 <input type="datetime-local" id="data" placeholder="data de entrada">
+             </div>
+            
+            
+
+            <button onclick="produto.Salvar()" id="btn1">Salvar</button>
+            <button onclick="produto.Cancelar()">Cancelar</button>
+
+    </form>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                
+
+                    <th class="center">ID</th>
+                    <th class="center">cliente</th>
+                    <th class="center">telefone</th>
+                    <th class="center">relogio</th>
+                    <th class="center">serviço</th>
+                    <th class="center">valor</th>
+                    <th class="center">data\hora</th>
+                    <th class="center">editar\apagar</th>
+
+
+                </thead>
+                <tbody>
+                <tbody id="tbody">
+                    
+                </tbody> 
+            </table>
+         </div>
+    </main>
+
+</body>                                 
+</html>
