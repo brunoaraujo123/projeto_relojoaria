@@ -1,2 +1,2 @@
 # projeto_relojoaria
- Sistema de Cadastro de serviço
+ Sistema de Cadastro e Serviço de Clientes
